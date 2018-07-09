@@ -1,0 +1,20 @@
+PODS:
+  - RxSwift (4.2.0)
+  - Swift_SimpleNetworkLibrary (0.2.0)
+
+DEPENDENCIES:
+  - RxSwift
+  - Swift_SimpleNetworkLibrary
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RxSwift
+    - Swift_SimpleNetworkLibrary
+
+SPEC CHECKSUMS:
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  Swift_SimpleNetworkLibrary: 8e515a933dff61014640c951d6d3fed15fc12f9d
+
+PODFILE CHECKSUM: b1c1d73a310f9591aed6486ee4012e5179ae4d07
+
+COCOAPODS: 1.5.3

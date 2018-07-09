@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		328E82F3AE9CB6AAADDEC079 /* Pods_FIFA2018UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F217CA6F592B08644BFA6B9 /* Pods_FIFA2018UITests.framework */; };
+		8AC39EB53BB00C65E67F39ED /* Pods_FIFA2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B18CA02589C9DF93F0FF57A /* Pods_FIFA2018.framework */; };
+		A52E7F9020EB79C60073AD55 /* WorldCupMatchesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E7F8F20EB79C60073AD55 /* WorldCupMatchesPresenter.swift */; };
+		A52E7F9320EB7C500073AD55 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E7F9220EB7C500073AD55 /* Match.swift */; };
+		A52E7F9820EB7CCF0073AD55 /* MatchScheduleTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E7F9720EB7CCF0073AD55 /* MatchScheduleTableViewDataSource.swift */; };
+		A52E7F9F20EB7D9D0073AD55 /* MatchScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E7F9D20EB7D9D0073AD55 /* MatchScheduleTableViewCell.swift */; };
+		A52E7FA020EB7D9D0073AD55 /* MatchScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A52E7F9E20EB7D9D0073AD55 /* MatchScheduleTableViewCell.xib */; };
+		A52E7FA220EB7FE70073AD55 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E7FA120EB7FE70073AD55 /* Protocols.swift */; };
+		A52E7FA520EBBC9A0073AD55 /* ViewObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E7FA420EBBC9A0073AD55 /* ViewObject.swift */; };
+		A52E7FA820EBBD100073AD55 /* DisplableStageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E7FA720EBBD100073AD55 /* DisplableStageTransformer.swift */; };
+		A533391B20EE2EC6009AB415 /* MatchScheduleDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533391A20EE2EC6009AB415 /* MatchScheduleDataDelegate.swift */; };
+		A533391D20EE3166009AB415 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533391C20EE3166009AB415 /* LocationViewController.swift */; };
+		A564CE5A20F1188A0043A20D /* NetworkLayerRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564CE5920F1188A0043A20D /* NetworkLayerRx.swift */; };
+		A5FCDE5220EA5BE700F34AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FCDE5120EA5BE700F34AC0 /* AppDelegate.swift */; };
+		A5FCDE5420EA5BE700F34AC0 /* WorldCupMatchesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FCDE5320EA5BE700F34AC0 /* WorldCupMatchesListViewController.swift */; };
+		A5FCDE5920EA5BE800F34AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5FCDE5820EA5BE800F34AC0 /* Assets.xcassets */; };
+		A5FCDE5C20EA5BE800F34AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5FCDE5A20EA5BE800F34AC0 /* LaunchScreen.storyboard */; };
+		A5FCDE6720EA5BE800F34AC0 /* FIFA2018Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FCDE6620EA5BE800F34AC0 /* FIFA2018Tests.swift */; };
+		A5FCDE7220EA5BE800F34AC0 /* FIFA2018UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FCDE7120EA5BE800F34AC0 /* FIFA2018UITests.swift */; };
+		CFC0D171BDB8D2E99FD776A5 /* Pods_FIFA2018Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85023B02076CDA1AF42149D /* Pods_FIFA2018Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5FCDE6320EA5BE800F34AC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5FCDE4620EA5BE700F34AC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5FCDE4D20EA5BE700F34AC0;
+			remoteInfo = FIFA2018;
+		};
+		A5FCDE6E20EA5BE800F34AC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5FCDE4620EA5BE700F34AC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5FCDE4D20EA5BE700F34AC0;
+			remoteInfo = FIFA2018;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F217CA6F592B08644BFA6B9 /* Pods_FIFA2018UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIFA2018UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B18CA02589C9DF93F0FF57A /* Pods_FIFA2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIFA2018.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		324924B650751F7C4CF36317 /* Pods-FIFA2018UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIFA2018UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIFA2018UITests/Pods-FIFA2018UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		72C3F195570523524BE56D67 /* Pods-FIFA2018Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIFA2018Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIFA2018Tests/Pods-FIFA2018Tests.release.xcconfig"; sourceTree = "<group>"; };
+		800109C75AF4F7224F29A2A5 /* Pods-FIFA2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIFA2018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIFA2018/Pods-FIFA2018.debug.xcconfig"; sourceTree = "<group>"; };
+		9FA4585D55C3A0037FE4CAF6 /* Pods-FIFA2018Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIFA2018Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIFA2018Tests/Pods-FIFA2018Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A52E7F8F20EB79C60073AD55 /* WorldCupMatchesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupMatchesPresenter.swift; sourceTree = "<group>"; };
+		A52E7F9220EB7C500073AD55 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		A52E7F9720EB7CCF0073AD55 /* MatchScheduleTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchScheduleTableViewDataSource.swift; sourceTree = "<group>"; };
+		A52E7F9D20EB7D9D0073AD55 /* MatchScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		A52E7F9E20EB7D9D0073AD55 /* MatchScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		A52E7FA120EB7FE70073AD55 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		A52E7FA420EBBC9A0073AD55 /* ViewObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewObject.swift; sourceTree = "<group>"; };
+		A52E7FA720EBBD100073AD55 /* DisplableStageTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplableStageTransformer.swift; sourceTree = "<group>"; };
+		A533391A20EE2EC6009AB415 /* MatchScheduleDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchScheduleDataDelegate.swift; sourceTree = "<group>"; };
+		A533391C20EE3166009AB415 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		A564CE5920F1188A0043A20D /* NetworkLayerRx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerRx.swift; sourceTree = "<group>"; };
+		A5FCDE4E20EA5BE700F34AC0 /* FIFA2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIFA2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5FCDE5120EA5BE700F34AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5FCDE5320EA5BE700F34AC0 /* WorldCupMatchesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupMatchesListViewController.swift; sourceTree = "<group>"; };
+		A5FCDE5820EA5BE800F34AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5FCDE5B20EA5BE800F34AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5FCDE5D20EA5BE800F34AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5FCDE6220EA5BE800F34AC0 /* FIFA2018Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FIFA2018Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5FCDE6620EA5BE800F34AC0 /* FIFA2018Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIFA2018Tests.swift; sourceTree = "<group>"; };
+		A5FCDE6820EA5BE800F34AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5FCDE6D20EA5BE800F34AC0 /* FIFA2018UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FIFA2018UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5FCDE7120EA5BE800F34AC0 /* FIFA2018UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIFA2018UITests.swift; sourceTree = "<group>"; };
+		A5FCDE7320EA5BE800F34AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AACD9E05B80CDDEFFDF757FC /* Pods-FIFA2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIFA2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIFA2018/Pods-FIFA2018.release.xcconfig"; sourceTree = "<group>"; };
+		B85023B02076CDA1AF42149D /* Pods_FIFA2018Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIFA2018Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC28ED7D837AA484EB3DA0A6 /* Pods-FIFA2018UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIFA2018UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIFA2018UITests/Pods-FIFA2018UITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5FCDE4B20EA5BE700F34AC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC39EB53BB00C65E67F39ED /* Pods_FIFA2018.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5FCDE5F20EA5BE800F34AC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC0D171BDB8D2E99FD776A5 /* Pods_FIFA2018Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5FCDE6A20EA5BE800F34AC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328E82F3AE9CB6AAADDEC079 /* Pods_FIFA2018UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E5D8C03B98A17D569F3BFAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B18CA02589C9DF93F0FF57A /* Pods_FIFA2018.framework */,
+				B85023B02076CDA1AF42149D /* Pods_FIFA2018Tests.framework */,
+				0F217CA6F592B08644BFA6B9 /* Pods_FIFA2018UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A52E7F9120EB7C420073AD55 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A52E7F9220EB7C500073AD55 /* Match.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A52E7F9420EB7C7F0073AD55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5FCDE5320EA5BE700F34AC0 /* WorldCupMatchesListViewController.swift */,
+				A52E7F9720EB7CCF0073AD55 /* MatchScheduleTableViewDataSource.swift */,
+				A52E7F9D20EB7D9D0073AD55 /* MatchScheduleTableViewCell.swift */,
+				A52E7F9E20EB7D9D0073AD55 /* MatchScheduleTableViewCell.xib */,
+				A533391A20EE2EC6009AB415 /* MatchScheduleDataDelegate.swift */,
+				A533391C20EE3166009AB415 /* LocationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A52E7F9620EB7C990073AD55 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A52E7F8F20EB79C60073AD55 /* WorldCupMatchesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A52E7FA320EBBC870073AD55 /* ViewObject */ = {
+			isa = PBXGroup;
+			children = (
+				A52E7FA420EBBC9A0073AD55 /* ViewObject.swift */,
+			);
+			path = ViewObject;
+			sourceTree = "<group>";
+		};
+		A52E7FA620EBBCF40073AD55 /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				A52E7FA720EBBD100073AD55 /* DisplableStageTransformer.swift */,
+			);
+			path = Transformer;
+			sourceTree = "<group>";
+		};
+		A5D9DA1F20EB30F9002A6A3F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A564CE5920F1188A0043A20D /* NetworkLayerRx.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A5FCDE4520EA5BE700F34AC0 = {
+			isa = PBXGroup;
+			children = (
+				A5FCDE5020EA5BE700F34AC0 /* FIFA2018 */,
+				A5FCDE6520EA5BE800F34AC0 /* FIFA2018Tests */,
+				A5FCDE7020EA5BE800F34AC0 /* FIFA2018UITests */,
+				A5FCDE4F20EA5BE700F34AC0 /* Products */,
+				D8D7CA8D7E69A88A100C0675 /* Pods */,
+				2E5D8C03B98A17D569F3BFAB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5FCDE4F20EA5BE700F34AC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5FCDE4E20EA5BE700F34AC0 /* FIFA2018.app */,
+				A5FCDE6220EA5BE800F34AC0 /* FIFA2018Tests.xctest */,
+				A5FCDE6D20EA5BE800F34AC0 /* FIFA2018UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5FCDE5020EA5BE700F34AC0 /* FIFA2018 */ = {
+			isa = PBXGroup;
+			children = (
+				A52E7FA620EBBCF40073AD55 /* Transformer */,
+				A52E7FA320EBBC870073AD55 /* ViewObject */,
+				A52E7F9620EB7C990073AD55 /* Presenter */,
+				A52E7F9420EB7C7F0073AD55 /* View */,
+				A52E7F9120EB7C420073AD55 /* Domain */,
+				A5D9DA1F20EB30F9002A6A3F /* Network */,
+				A5FCDE5120EA5BE700F34AC0 /* AppDelegate.swift */,
+				A5FCDE5820EA5BE800F34AC0 /* Assets.xcassets */,
+				A5FCDE5A20EA5BE800F34AC0 /* LaunchScreen.storyboard */,
+				A5FCDE5D20EA5BE800F34AC0 /* Info.plist */,
+				A52E7FA120EB7FE70073AD55 /* Protocols.swift */,
+			);
+			path = FIFA2018;
+			sourceTree = "<group>";
+		};
+		A5FCDE6520EA5BE800F34AC0 /* FIFA2018Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A5FCDE6620EA5BE800F34AC0 /* FIFA2018Tests.swift */,
+				A5FCDE6820EA5BE800F34AC0 /* Info.plist */,
+			);
+			path = FIFA2018Tests;
+			sourceTree = "<group>";
+		};
+		A5FCDE7020EA5BE800F34AC0 /* FIFA2018UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5FCDE7120EA5BE800F34AC0 /* FIFA2018UITests.swift */,
+				A5FCDE7320EA5BE800F34AC0 /* Info.plist */,
+			);
+			path = FIFA2018UITests;
+			sourceTree = "<group>";
+		};
+		D8D7CA8D7E69A88A100C0675 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				800109C75AF4F7224F29A2A5 /* Pods-FIFA2018.debug.xcconfig */,
+				AACD9E05B80CDDEFFDF757FC /* Pods-FIFA2018.release.xcconfig */,
+				9FA4585D55C3A0037FE4CAF6 /* Pods-FIFA2018Tests.debug.xcconfig */,
+				72C3F195570523524BE56D67 /* Pods-FIFA2018Tests.release.xcconfig */,
+				324924B650751F7C4CF36317 /* Pods-FIFA2018UITests.debug.xcconfig */,
+				BC28ED7D837AA484EB3DA0A6 /* Pods-FIFA2018UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5FCDE4D20EA5BE700F34AC0 /* FIFA2018 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5FCDE7620EA5BE800F34AC0 /* Build configuration list for PBXNativeTarget "FIFA2018" */;
+			buildPhases = (
+				816FEBA7D881CDD4D0821D5F /* [CP] Check Pods Manifest.lock */,
+				A5FCDE4A20EA5BE700F34AC0 /* Sources */,
+				A5FCDE4B20EA5BE700F34AC0 /* Frameworks */,
+				A5FCDE4C20EA5BE700F34AC0 /* Resources */,
+				E7867D128BD36298CC50D144 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FIFA2018;
+			productName = FIFA2018;
+			productReference = A5FCDE4E20EA5BE700F34AC0 /* FIFA2018.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5FCDE6120EA5BE800F34AC0 /* FIFA2018Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5FCDE7920EA5BE800F34AC0 /* Build configuration list for PBXNativeTarget "FIFA2018Tests" */;
+			buildPhases = (
+				30826EC361BC01175AF3D014 /* [CP] Check Pods Manifest.lock */,
+				A5FCDE5E20EA5BE800F34AC0 /* Sources */,
+				A5FCDE5F20EA5BE800F34AC0 /* Frameworks */,
+				A5FCDE6020EA5BE800F34AC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5FCDE6420EA5BE800F34AC0 /* PBXTargetDependency */,
+			);
+			name = FIFA2018Tests;
+			productName = FIFA2018Tests;
+			productReference = A5FCDE6220EA5BE800F34AC0 /* FIFA2018Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5FCDE6C20EA5BE800F34AC0 /* FIFA2018UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5FCDE7C20EA5BE800F34AC0 /* Build configuration list for PBXNativeTarget "FIFA2018UITests" */;
+			buildPhases = (
+				C214853C2E61AE6D616A11E2 /* [CP] Check Pods Manifest.lock */,
+				A5FCDE6920EA5BE800F34AC0 /* Sources */,
+				A5FCDE6A20EA5BE800F34AC0 /* Frameworks */,
+				A5FCDE6B20EA5BE800F34AC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5FCDE6F20EA5BE800F34AC0 /* PBXTargetDependency */,
+			);
+			name = FIFA2018UITests;
+			productName = FIFA2018UITests;
+			productReference = A5FCDE6D20EA5BE800F34AC0 /* FIFA2018UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5FCDE4620EA5BE700F34AC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Swapnil Sankla";
+				TargetAttributes = {
+					A5FCDE4D20EA5BE700F34AC0 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					A5FCDE6120EA5BE800F34AC0 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = A5FCDE4D20EA5BE700F34AC0;
+					};
+					A5FCDE6C20EA5BE800F34AC0 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = A5FCDE4D20EA5BE700F34AC0;
+					};
+				};
+			};
+			buildConfigurationList = A5FCDE4920EA5BE700F34AC0 /* Build configuration list for PBXProject "FIFA2018" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5FCDE4520EA5BE700F34AC0;
+			productRefGroup = A5FCDE4F20EA5BE700F34AC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5FCDE4D20EA5BE700F34AC0 /* FIFA2018 */,
+				A5FCDE6120EA5BE800F34AC0 /* FIFA2018Tests */,
+				A5FCDE6C20EA5BE800F34AC0 /* FIFA2018UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5FCDE4C20EA5BE700F34AC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52E7FA020EB7D9D0073AD55 /* MatchScheduleTableViewCell.xib in Resources */,
+				A5FCDE5C20EA5BE800F34AC0 /* LaunchScreen.storyboard in Resources */,
+				A5FCDE5920EA5BE800F34AC0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5FCDE6020EA5BE800F34AC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5FCDE6B20EA5BE800F34AC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30826EC361BC01175AF3D014 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FIFA2018Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		816FEBA7D881CDD4D0821D5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FIFA2018-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C214853C2E61AE6D616A11E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FIFA2018UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7867D128BD36298CC50D144 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FIFA2018/Pods-FIFA2018-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swift_SimpleNetworkLibrary/Swift_SimpleNetworkLibrary.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swift_SimpleNetworkLibrary.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FIFA2018/Pods-FIFA2018-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5FCDE4A20EA5BE700F34AC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52E7F9F20EB7D9D0073AD55 /* MatchScheduleTableViewCell.swift in Sources */,
+				A52E7FA220EB7FE70073AD55 /* Protocols.swift in Sources */,
+				A52E7F9020EB79C60073AD55 /* WorldCupMatchesPresenter.swift in Sources */,
+				A52E7FA520EBBC9A0073AD55 /* ViewObject.swift in Sources */,
+				A52E7FA820EBBD100073AD55 /* DisplableStageTransformer.swift in Sources */,
+				A533391D20EE3166009AB415 /* LocationViewController.swift in Sources */,
+				A5FCDE5420EA5BE700F34AC0 /* WorldCupMatchesListViewController.swift in Sources */,
+				A5FCDE5220EA5BE700F34AC0 /* AppDelegate.swift in Sources */,
+				A564CE5A20F1188A0043A20D /* NetworkLayerRx.swift in Sources */,
+				A533391B20EE2EC6009AB415 /* MatchScheduleDataDelegate.swift in Sources */,
+				A52E7F9320EB7C500073AD55 /* Match.swift in Sources */,
+				A52E7F9820EB7CCF0073AD55 /* MatchScheduleTableViewDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5FCDE5E20EA5BE800F34AC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5FCDE6720EA5BE800F34AC0 /* FIFA2018Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5FCDE6920EA5BE800F34AC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5FCDE7220EA5BE800F34AC0 /* FIFA2018UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5FCDE6420EA5BE800F34AC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5FCDE4D20EA5BE700F34AC0 /* FIFA2018 */;
+			targetProxy = A5FCDE6320EA5BE800F34AC0 /* PBXContainerItemProxy */;
+		};
+		A5FCDE6F20EA5BE800F34AC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5FCDE4D20EA5BE700F34AC0 /* FIFA2018 */;
+			targetProxy = A5FCDE6E20EA5BE800F34AC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5FCDE5A20EA5BE800F34AC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5FCDE5B20EA5BE800F34AC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5FCDE7420EA5BE800F34AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5FCDE7520EA5BE800F34AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5FCDE7720EA5BE800F34AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800109C75AF4F7224F29A2A5 /* Pods-FIFA2018.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FIFA2018/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sankla.swapnil.FIFA2018;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5FCDE7820EA5BE800F34AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AACD9E05B80CDDEFFDF757FC /* Pods-FIFA2018.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FIFA2018/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sankla.swapnil.FIFA2018;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5FCDE7A20EA5BE800F34AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA4585D55C3A0037FE4CAF6 /* Pods-FIFA2018Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FIFA2018Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sankla.swapnil.FIFA2018Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FIFA2018.app/FIFA2018";
+			};
+			name = Debug;
+		};
+		A5FCDE7B20EA5BE800F34AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C3F195570523524BE56D67 /* Pods-FIFA2018Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FIFA2018Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sankla.swapnil.FIFA2018Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FIFA2018.app/FIFA2018";
+			};
+			name = Release;
+		};
+		A5FCDE7D20EA5BE800F34AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324924B650751F7C4CF36317 /* Pods-FIFA2018UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FIFA2018UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sankla.swapnil.FIFA2018UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FIFA2018;
+			};
+			name = Debug;
+		};
+		A5FCDE7E20EA5BE800F34AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC28ED7D837AA484EB3DA0A6 /* Pods-FIFA2018UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FIFA2018UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sankla.swapnil.FIFA2018UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FIFA2018;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5FCDE4920EA5BE700F34AC0 /* Build configuration list for PBXProject "FIFA2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FCDE7420EA5BE800F34AC0 /* Debug */,
+				A5FCDE7520EA5BE800F34AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5FCDE7620EA5BE800F34AC0 /* Build configuration list for PBXNativeTarget "FIFA2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FCDE7720EA5BE800F34AC0 /* Debug */,
+				A5FCDE7820EA5BE800F34AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5FCDE7920EA5BE800F34AC0 /* Build configuration list for PBXNativeTarget "FIFA2018Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FCDE7A20EA5BE800F34AC0 /* Debug */,
+				A5FCDE7B20EA5BE800F34AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5FCDE7C20EA5BE800F34AC0 /* Build configuration list for PBXNativeTarget "FIFA2018UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FCDE7D20EA5BE800F34AC0 /* Debug */,
+				A5FCDE7E20EA5BE800F34AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5FCDE4620EA5BE700F34AC0 /* Project object */;
+}
